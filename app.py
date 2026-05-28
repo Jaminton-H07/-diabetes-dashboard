@@ -472,8 +472,8 @@ elif pagina == "📊 Análisis del dataset":
             }
             df_vars = pd.DataFrame(vars_data)
             st.dataframe(
-                df_vars.style.background_gradient(subset=["Asimetría"], cmap="RdYlGn_r"),
-                use_container_width=True, hide_index=True
+            df_vars,
+            use_container_width=True, hide_index=True
             )
 
         with col_chart:
